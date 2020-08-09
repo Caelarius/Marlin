@@ -128,11 +128,11 @@
   #define Y_CS_PIN                         P1_09
 #endif
 
-#define Z_STEP_PIN                         P0_22
-#define Z_DIR_PIN                          P2_11
-#define Z_ENABLE_PIN                       P0_21
+#define Z_STEP_PIN                         P1_15 //P0_22
+#define Z_DIR_PIN                          P1_14 //P2_11
+#define Z_ENABLE_PIN                       P1_16 //P0_21
 #ifndef Z_CS_PIN
-  #define Z_CS_PIN                         P1_08
+  #define Z_CS_PIN                         P1_01 //P1_08
 #endif
 
 #define E0_STEP_PIN                        P2_13
@@ -142,11 +142,11 @@
   #define E0_CS_PIN                        P1_04
 #endif
 
-#define E1_STEP_PIN                        P1_15
-#define E1_DIR_PIN                         P1_14
-#define E1_ENABLE_PIN                      P1_16
+#define E1_STEP_PIN                        P0_22 //P1_15
+#define E1_DIR_PIN                         P2_11 //P1_14
+#define E1_ENABLE_PIN                      P0_21 //P1_16
 #ifndef E1_CS_PIN
-  #define E1_CS_PIN                        P1_01
+  #define E1_CS_PIN                        P1_08 // P1_01
 #endif
 
 #define TEMP_1_PIN                      P0_23_A0  // A2 (T2) - (69) - TEMP_1_PIN
@@ -195,17 +195,17 @@
   #define Y_SERIAL_TX_PIN                  P1_09
   #define Y_SERIAL_RX_PIN                  P1_09
 
-  #define Z_SERIAL_TX_PIN                  P1_08
-  #define Z_SERIAL_RX_PIN                  P1_08
+  #define Z_SERIAL_TX_PIN                  P1_01 //P1_08
+  #define Z_SERIAL_RX_PIN                  P1_01 //P1_08
 
   #define E0_SERIAL_TX_PIN                 P1_04
   #define E0_SERIAL_RX_PIN                 P1_04
 
-  #define E1_SERIAL_TX_PIN                 P1_01
-  #define E1_SERIAL_RX_PIN                 P1_01
+  #define E1_SERIAL_TX_PIN                 P1_08 //P1_01
+  #define E1_SERIAL_RX_PIN                 P1_08 //P1_01
 
-  #define Z2_SERIAL_TX_PIN                 P1_01
-  #define Z2_SERIAL_RX_PIN                 P1_01
+  #define Z2_SERIAL_TX_PIN                 P1_08 //P1_01
+  #define Z2_SERIAL_RX_PIN                 P1_08 //P1_01
 
   // Reduce baud rate to improve software serial reliability
   #define TMC_BAUD_RATE 19200
